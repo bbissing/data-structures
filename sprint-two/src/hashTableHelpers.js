@@ -54,6 +54,9 @@ var getIndexBelowMaxForKey = function(str, max) {
   return hash % max;
 };
 
+// return an index from g('Steven', 8)  ==> 3
+
+
 /*
  * Complexity: What is the time complexity of the above functions?
  */

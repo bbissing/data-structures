@@ -2,23 +2,24 @@ var LinkedList = function() {
   var list = {};
   list.head = null;
   list.tail = null;
-
+  // O(1)
   list.addToTail = function(value) {
     var newNode = Node(value);
-    if (list.head === null) {
-      list.head = newNode;
+    if (this.head === null) {
+      this.head = newNode;
     } else {
-      list.tail.next = newNode;
+      this.tail.next = newNode;
     }
-    list.tail = newNode;
+    this.tail = newNode;
   };
-
+  // O(1)
   list.removeHead = function() {
-    var oldHead = list.head.value;
-    list.head = list.head.next;
+    var oldHead = this.head.value;
+    this.head = this.head.next;
     return oldHead;
   };
 
+  // O(n)
   list.contains = function(target) {
     //recursion
     var findTarget = function(node, target) {

@@ -1,3 +1,4 @@
+
 var Tree = function(value) {
   var newTree = {};
   newTree.value = value;
